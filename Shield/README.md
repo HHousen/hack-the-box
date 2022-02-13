@@ -70,7 +70,7 @@ HTB - Shield
 		+ 1 host(s) tested 
 		```
 	* Visit `http://10.10.10.29`
-		![Screenshot-20200504172102-1248x817.png](./resources/a7e44395f3a74fac82d9717d65d9cffc.png)
+		![Screenshot-20200504172102-1248x817.png](images/a7e44395f3a74fac82d9717d65d9cffc.png)
 	* Subdirectory brute force with gobuster: `gobuster dir -u http://10.10.10.29/ -t 200 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt` (other possible wordlist: `/usr/share/wordlists/dirb/common.txt`) 
 		```
 		===============================================================

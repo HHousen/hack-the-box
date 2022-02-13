@@ -85,7 +85,7 @@ HTB - Vaccine
 		- Sent updated info to cirt.net -- Thank you!
 		```
 	* Ran `dirbuster` with `http://10.10.10.46:80`, wordlist `/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt`
-		![Screenshot-20200504134337-768x544.png](./resources/b7a40967cb314b8ca6fba9efac4a0b9a.png)
+		![Screenshot-20200504134337-768x544.png](images/b7a40967cb314b8ca6fba9efac4a0b9a.png)
 		```
 		DirBuster 1.0-RC1 - Report
 		http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
@@ -174,10 +174,10 @@ HTB - Vaccine
 		Result: password is `qwerty789`
 5. Foothold
 	* Browsing to port 80, we can see a login page for MegaCorp. The credentials `admin:qwerty789` can be used to login.
-		![Screenshot-20200504141424-1486x658.png](./resources/d63ff367aaaa434ba634cb5b45943662.png)
+		![Screenshot-20200504141424-1486x658.png](images/d63ff367aaaa434ba634cb5b45943662.png)
 	* Search parameter in URL: `http://10.10.10.46/dashboard.php?search=a`
 	* Get PHP Session ID: `PHPSESSID:"lkktfc22hu9uer2mlo36ngk6db"`
-		![Screenshot-20200504142202-1850x419.png](./resources/2f51b07834234d5ba833ad185aa68a6d.png)
+		![Screenshot-20200504142202-1850x419.png](images/2f51b07834234d5ba833ad185aa68a6d.png)
 	* Scan for SQL injection with metasploit
 		```
 		sudo msfconsole

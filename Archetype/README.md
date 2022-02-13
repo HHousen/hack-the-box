@@ -72,8 +72,6 @@ HTB - Archetype
 2. Nessus scan for fun
 	Start with `sudo /etc/init.d/nessusd start` and go to `https://kali:8834`
 
-	[HTB_Intro_rorn1w.pdf](./resources/eb70a8f8c6a5494dbc347e25ea25f312.pdf)
-
 3. Samba is open so lets see is anonymous login enabled and list the shares
 	```
 	smbclient -L \\\\10.10.10.27\\

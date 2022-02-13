@@ -352,7 +352,7 @@ HTB - OpenAdmin
 		
 		--------------------------------
 		```
-		![Screenshot-20200509000509-1226x432.png](./resources/d313d186a2cf43538031c27912670cba.png)
+		![Screenshot-20200509000509-1226x432.png](images/d313d186a2cf43538031c27912670cba.png)
 		
 	3. Search for `opennetadmin v18.1.1 exploit` finds [OpenNetAdmin 18.1.1 - Remote Code Execution](https://www.exploit-db.com/exploits/47691) and [OpenNetAdmin 18.1.1 - Command Injection Exploit (Metasploit)](https://www.exploit-db.com/exploits/47772) and [Rapid7](https://www.rapid7.com/db/modules/exploit/unix/webapp/opennetadmin_ping_cmd_injection)
 	4. Metasploit
