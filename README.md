@@ -18,6 +18,7 @@ More info about the structure of HackTheBox can be found on the [HTB knowledge b
 2. [2nd December 2020 - Doctor](Machines/Doctor/README.md) (0 points)
 3. [13th February 2022 - Horizontall](Machines/Horizontall/README.md) (0 points)
 4. [14th February 2022 - Paper](Machines/Paper/README.md) (10+20 points)
+5. [17th February 2022 - Secret](Machines/Secret/README.md) (10+20 points)
 
 ### Older Undated Writeups
 
