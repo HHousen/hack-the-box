@@ -14,11 +14,12 @@ More info about the structure of HackTheBox can be found on the [HTB knowledge b
 
 ## Machines
 
-1. [9th May 2020 - OpenAdmin](Machines/OpenAdmin/README.md) (0 points)
-2. [2nd December 2020 - Doctor](Machines/Doctor/README.md) (0 points)
-3. [13th February 2022 - Horizontall](Machines/Horizontall/README.md) (0 points)
-4. [14th February 2022 - Paper](Machines/Paper/README.md) (10+20 points)
-5. [17th February 2022 - Secret](Machines/Secret/README.md) (10+20 points)
+1. [9th May 2020 - OpenAdmin (Easy)](Machines/OpenAdmin/README.md) (0 points)
+2. [2nd December 2020 - Doctor (Easy)](Machines/Doctor/README.md) (0 points)
+3. [13th February 2022 - Horizontall (Easy)](Machines/Horizontall/README.md) (0 points)
+4. [14th February 2022 - Paper (Easy)](Machines/Paper/README.md) (10+20 points)
+5. [17th February 2022 - Secret (Easy)](Machines/Secret/README.md) (10+20 points)
+6. [18th February 2022 - Devzat (Medium)](Machines/Secret/README.md) (15+30 points)
 
 ### Older Undated Writeups
 
