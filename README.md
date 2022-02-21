@@ -21,6 +21,7 @@ More info about the structure of HackTheBox can be found on the [HTB knowledge b
 5. [17th February 2022 - Secret (Easy)](Machines/Secret/README.md) (10+20 points)
 6. [18th February 2022 - Devzat (Medium)](Machines/Secret/README.md) (15+30 points)
 7. [20th February 2022 - Driver (Easy)](Machines/Driver/README.md) (10+20 points)
+8. [21st February 2022 - Backdoor (Easy)](Machines/Backdoor/README.md) (10+20 points)
 
 ### Older Undated Writeups
 
