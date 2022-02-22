@@ -1,0 +1,489 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-02-21 22:31 EST
+Nmap scan report for pandora.htb (10.10.11.136)
+Host is up (0.012s latency).
+
+PORT    STATE SERVICE VERSION
+161/udp open  snmp    SNMPv1 server; net-snmp SNMPv3 server (public)
+| snmp-processes: 
+|   1: 
+|     Name: systemd
+|     Path: /sbin/init
+|     Params: maybe-ubiquity
+|   2: 
+|     Name: kthreadd
+|   3: 
+|     Name: rcu_gp
+|   4: 
+|     Name: rcu_par_gp
+|   6: 
+|     Name: kworker/0:0H-kblockd
+|   9: 
+|     Name: mm_percpu_wq
+|   10: 
+|     Name: ksoftirqd/0
+|   11: 
+|     Name: rcu_sched
+|   12: 
+|     Name: migration/0
+|   13: 
+|     Name: idle_inject/0
+|   14: 
+|     Name: cpuhp/0
+|   15: 
+|     Name: cpuhp/1
+|   16: 
+|     Name: idle_inject/1
+|   17: 
+|     Name: migration/1
+|   18: 
+|     Name: ksoftirqd/1
+|   20: 
+|     Name: kworker/1:0H-kblockd
+|   21: 
+|     Name: kdevtmpfs
+|   22: 
+|     Name: netns
+|   23: 
+|     Name: rcu_tasks_kthre
+|   24: 
+|     Name: kauditd
+|   25: 
+|     Name: khungtaskd
+|   26: 
+|     Name: oom_reaper
+|   27: 
+|     Name: writeback
+|   28: 
+|     Name: kcompactd0
+|   29: 
+|     Name: ksmd
+|   30: 
+|     Name: khugepaged
+|   77: 
+|     Name: kintegrityd
+|   78: 
+|     Name: kblockd
+|   79: 
+|     Name: blkcg_punt_bio
+|   80: 
+|     Name: tpm_dev_wq
+|   81: 
+|     Name: ata_sff
+|   82: 
+|     Name: md
+|   83: 
+|     Name: edac-poller
+|   84: 
+|     Name: devfreq_wq
+|   85: 
+|     Name: watchdogd
+|   88: 
+|     Name: kswapd0
+|   89: 
+|     Name: ecryptfs-kthrea
+|   91: 
+|     Name: kthrotld
+|   92: 
+|     Name: irq/24-pciehp
+|   93: 
+|     Name: irq/25-pciehp
+|   94: 
+|     Name: irq/26-pciehp
+|   95: 
+|     Name: irq/27-pciehp
+|   96: 
+|     Name: irq/28-pciehp
+|   97: 
+|     Name: irq/29-pciehp
+|   98: 
+|     Name: irq/30-pciehp
+|   99: 
+|     Name: irq/31-pciehp
+|   100: 
+|     Name: irq/32-pciehp
+|   101: 
+|     Name: irq/33-pciehp
+|   102: 
+|     Name: irq/34-pciehp
+|   103: 
+|     Name: irq/35-pciehp
+|   104: 
+|     Name: irq/36-pciehp
+|   105: 
+|     Name: irq/37-pciehp
+|   106: 
+|     Name: irq/38-pciehp
+|   107: 
+|     Name: irq/39-pciehp
+|   108: 
+|     Name: irq/40-pciehp
+|   109: 
+|     Name: irq/41-pciehp
+|   110: 
+|     Name: irq/42-pciehp
+|   111: 
+|     Name: irq/43-pciehp
+|   112: 
+|     Name: irq/44-pciehp
+|   113: 
+|     Name: irq/45-pciehp
+|   114: 
+|     Name: irq/46-pciehp
+|   115: 
+|     Name: irq/47-pciehp
+|   116: 
+|     Name: irq/48-pciehp
+|   117: 
+|     Name: irq/49-pciehp
+|   118: 
+|     Name: irq/50-pciehp
+|   119: 
+|     Name: irq/51-pciehp
+|   120: 
+|     Name: irq/52-pciehp
+|   121: 
+|     Name: irq/53-pciehp
+|   122: 
+|     Name: irq/54-pciehp
+|   123: 
+|     Name: irq/55-pciehp
+|   124: 
+|     Name: acpi_thermal_pm
+|   125: 
+|     Name: scsi_eh_0
+|   126: 
+|     Name: scsi_tmf_0
+|   127: 
+|     Name: scsi_eh_1
+|   128: 
+|     Name: scsi_tmf_1
+|   130: 
+|     Name: vfio-irqfd-clea
+|   131: 
+|     Name: ipv6_addrconf
+|   141: 
+|     Name: kstrp
+|   144: 
+|     Name: kworker/u5:0
+|   157: 
+|     Name: charger_manager
+|   202: 
+|     Name: mpt_poll_0
+|   203: 
+|     Name: mpt/0
+|   205: 
+|     Name: cryptd
+|   206: 
+|     Name: scsi_eh_2
+|   213: 
+|     Name: scsi_tmf_2
+|   216: 
+|     Name: scsi_eh_3
+|   217: 
+|     Name: scsi_tmf_3
+|   220: 
+|     Name: scsi_eh_4
+|   222: 
+|     Name: scsi_tmf_4
+|   223: 
+|     Name: scsi_eh_5
+|   226: 
+|     Name: scsi_tmf_5
+|   227: 
+|     Name: scsi_eh_6
+|   228: 
+|     Name: scsi_tmf_6
+|   230: 
+|     Name: scsi_eh_7
+|   231: 
+|     Name: scsi_tmf_7
+|   235: 
+|     Name: irq/16-vmwgfx
+|   236: 
+|     Name: scsi_eh_8
+|   238: 
+|     Name: ttm_swap
+|   239: 
+|     Name: scsi_tmf_8
+|   241: 
+|     Name: scsi_eh_9
+|   242: 
+|     Name: scsi_tmf_9
+|   243: 
+|     Name: scsi_eh_10
+|   244: 
+|     Name: scsi_tmf_10
+|   245: 
+|     Name: scsi_eh_11
+|   246: 
+|     Name: scsi_tmf_11
+|   247: 
+|     Name: scsi_eh_12
+|   248: 
+|     Name: scsi_tmf_12
+|   249: 
+|     Name: scsi_eh_13
+|   250: 
+|     Name: scsi_tmf_13
+|   251: 
+|     Name: scsi_eh_14
+|   252: 
+|     Name: scsi_tmf_14
+|   254: 
+|     Name: scsi_eh_15
+|   256: 
+|     Name: scsi_tmf_15
+|   258: 
+|     Name: scsi_eh_16
+|   260: 
+|     Name: scsi_tmf_16
+|   261: 
+|     Name: scsi_eh_17
+|   262: 
+|     Name: scsi_tmf_17
+|   263: 
+|     Name: scsi_eh_18
+|   264: 
+|     Name: scsi_tmf_18
+|   265: 
+|     Name: scsi_eh_19
+|   266: 
+|     Name: scsi_tmf_19
+|   267: 
+|     Name: scsi_eh_20
+|   268: 
+|     Name: scsi_tmf_20
+|   269: 
+|     Name: scsi_eh_21
+|   270: 
+|     Name: scsi_tmf_21
+|   271: 
+|     Name: scsi_eh_22
+|   272: 
+|     Name: scsi_tmf_22
+|   273: 
+|     Name: scsi_eh_23
+|   274: 
+|     Name: scsi_tmf_23
+|   275: 
+|     Name: scsi_eh_24
+|   276: 
+|     Name: scsi_tmf_24
+|   277: 
+|     Name: scsi_eh_25
+|   278: 
+|     Name: scsi_tmf_25
+|   279: 
+|     Name: scsi_eh_26
+|   280: 
+|     Name: scsi_tmf_26
+|   281: 
+|     Name: scsi_eh_27
+|   282: 
+|     Name: scsi_tmf_27
+|   283: 
+|     Name: scsi_eh_28
+|   284: 
+|     Name: scsi_tmf_28
+|   285: 
+|     Name: scsi_eh_29
+|   286: 
+|     Name: scsi_tmf_29
+|   287: 
+|     Name: scsi_eh_30
+|   288: 
+|     Name: scsi_tmf_30
+|   290: 
+|     Name: scsi_eh_31
+|   291: 
+|     Name: scsi_tmf_31
+|   331: 
+|     Name: scsi_eh_32
+|   332: 
+|     Name: scsi_tmf_32
+|   333: 
+|     Name: kworker/0:1H-kblockd
+|   344: 
+|     Name: kdmflush
+|   345: 
+|     Name: kdmflush
+|   377: 
+|     Name: raid5wq
+|   434: 
+|     Name: jbd2/dm-0-8
+|   435: 
+|     Name: ext4-rsv-conver
+|   461: 
+|     Name: kworker/1:1H-kblockd
+|   490: 
+|     Name: systemd-journal
+|     Path: /lib/systemd/systemd-journald
+|   516: 
+|     Name: systemd-udevd
+|     Path: /lib/systemd/systemd-udevd
+|   525: 
+|     Name: systemd-network
+|     Path: /lib/systemd/systemd-networkd
+|   561: 
+|     Name: nfit
+|   659: 
+|     Name: kaluad
+|   660: 
+|     Name: kmpath_rdacd
+|   661: 
+|     Name: kmpathd
+|   662: 
+|     Name: kmpath_handlerd
+|   663: 
+|     Name: multipathd
+|     Path: /sbin/multipathd
+|     Params: -d -s
+|   672: 
+|     Name: jbd2/sda2-8
+|   673: 
+|     Name: ext4-rsv-conver
+|   687: 
+|     Name: systemd-resolve
+|     Path: /lib/systemd/systemd-resolved
+|   688: 
+|     Name: systemd-timesyn
+|     Path: /lib/systemd/systemd-timesyncd
+|   696: 
+|     Name: kworker/1:4-events
+|   707: 
+|     Name: VGAuthService
+|     Path: /usr/bin/VGAuthService
+|   715: 
+|     Name: vmtoolsd
+|     Path: /usr/bin/vmtoolsd
+|   768: 
+|     Name: accounts-daemon
+|     Path: /usr/lib/accountsservice/accounts-daemon
+|   769: 
+|     Name: dbus-daemon
+|     Path: /usr/bin/dbus-daemon
+|     Params: --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+|   784: 
+|     Name: irqbalance
+|     Path: /usr/sbin/irqbalance
+|     Params: --foreground
+|   788: 
+|     Name: networkd-dispat
+|     Path: /usr/bin/python3
+|     Params: /usr/bin/networkd-dispatcher --run-startup-triggers
+|   790: 
+|     Name: rsyslogd
+|     Path: /usr/sbin/rsyslogd
+|     Params: -n -iNONE
+|   795: 
+|     Name: systemd-logind
+|     Path: /lib/systemd/systemd-logind
+|   797: 
+|     Name: udisksd
+|     Path: /usr/lib/udisks2/udisksd
+|   842: 
+|     Name: cron
+|     Path: /usr/sbin/cron
+|     Params: -f
+|   845: 
+|     Name: cron
+|     Path: /usr/sbin/CRON
+|     Params: -f
+|   855: 
+|     Name: sh
+|     Path: /bin/sh
+|     Params: -c sleep 30; /bin/bash -c '/usr/bin/host_check -u daniel -p HotelBabylon23'
+|   864: 
+|     Name: atd
+|     Path: /usr/sbin/atd
+|     Params: -f
+|   867: 
+|     Name: snmpd
+|     Path: /usr/sbin/snmpd
+|     Params: -LOw -u Debian-snmp -g Debian-snmp -I -smux mteTrigger mteTriggerConf -f -p /run/snmpd.pid
+|   873: 
+|     Name: sshd
+|     Path: sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+|   886: 
+|     Name: apache2
+|     Path: /usr/sbin/apache2
+|     Params: -k start
+|   940: 
+|     Name: polkitd
+|     Path: /usr/lib/policykit-1/polkitd
+|     Params: --no-debug
+|   961: 
+|     Name: agetty
+|     Path: /sbin/agetty
+|     Params: -o -p -- \u --noclear tty1 linux
+|   1031: 
+|     Name: mysqld
+|     Path: /usr/sbin/mysqld
+|   1070: 
+|     Name: apache2
+|     Path: /usr/sbin/apache2
+|     Params: -k start
+|   1071: 
+|     Name: apache2
+|     Path: /usr/sbin/apache2
+|     Params: -k start
+|   1072: 
+|     Name: apache2
+|     Path: /usr/sbin/apache2
+|     Params: -k start
+|   1073: 
+|     Name: apache2
+|     Path: /usr/sbin/apache2
+|     Params: -k start
+|   1074: 
+|     Name: apache2
+|     Path: /usr/sbin/apache2
+|     Params: -k start
+|   1182: 
+|     Name: host_check
+|     Path: /usr/bin/host_check
+|     Params: -u daniel -p HotelBabylon23
+|   1220: 
+|     Name: kworker/u4:0-events_power_efficient
+|   1221: 
+|     Name: kworker/0:2-events
+|   1253: 
+|     Name: apache2
+|     Path: /usr/sbin/apache2
+|     Params: -k start
+|   1298: 
+|     Name: kworker/1:0-events
+|   1418: 
+|     Name: kworker/0:1-ipv6_addrconf
+|   1459: 
+|_    Name: kworker/u4:1-events_power_efficient
+|_snmp-win32-software: ERROR: Script execution failed (use -d to debug)
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: 48fa95537765c36000000000
+|   snmpEngineBoots: 30
+|_  snmpEngineTime: 39m25s
+| snmp-sysdescr: Linux pandora 5.4.0-91-generic #102-Ubuntu SMP Fri Nov 5 16:31:28 UTC 2021 x86_64
+|_  System uptime: 39m26.03s (236603 timeticks)
+| snmp-netstat: 
+|   TCP  0.0.0.0:22           0.0.0.0:0
+|   TCP  10.10.11.136:39338   1.1.1.1:53
+|   TCP  127.0.0.1:3306       0.0.0.0:0
+|   TCP  127.0.0.53:53        0.0.0.0:0
+|   UDP  0.0.0.0:161          *:*
+|_  UDP  127.0.0.53:53        *:*
+| snmp-interfaces: 
+|   lo
+|     IP address: 127.0.0.1  Netmask: 255.0.0.0
+|     Type: softwareLoopback  Speed: 10 Mbps
+|     Traffic stats: 217.17 Kb sent, 217.17 Kb received
+|   VMware VMXNET3 Ethernet Controller
+|     IP address: 10.10.11.136  Netmask: 255.255.254.0
+|     MAC address: 00:50:56:b9:cc:93 (VMware)
+|     Type: ethernetCsmacd  Speed: 4 Gbps
+|_    Traffic stats: 12.20 Mb sent, 18.85 Mb received
+Service Info: Host: pandora
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 28.96 seconds
