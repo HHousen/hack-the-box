@@ -23,6 +23,7 @@ More info about the structure of HackTheBox can be found on the [HTB knowledge b
 7. [20th February 2022 - Driver (Easy)](Machines/Driver/README.md) (10+20 points)
 8. [21st February 2022 - Backdoor (Easy)](Machines/Backdoor/README.md) (10+20 points)
 9. [23rd February 2022 - Pandora (Easy)](Machines/Pandora/README.md) (10+20 points)
+10. [25th February 2022 - Shibboleth (Medium)](Machines/Shibboleth/README.md) (15+30 points)
 
 ### Older Undated Writeups
 
