@@ -25,6 +25,7 @@ More info about the structure of HackTheBox can be found on the [HTB knowledge b
 9. [23rd February 2022 - Pandora (Easy)](Machines/Pandora/README.md) (10+20 points)
 10. [25th February 2022 - Shibboleth (Medium)](Machines/Shibboleth/README.md) (15+30 points)
 11. [26th February 2022 - Meta (Medium)](Machines/Meta/README.md) (15+30 points)
+12. [28th February 2022 - AdmirerToo (Hard)](Machines/AdmirerToo/README.md) (20+40 points)
 
 ### Older Undated Writeups
 

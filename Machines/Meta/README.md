@@ -25,7 +25,7 @@ Scan for UDP services with `sudo nmap -p- -sU -r -T5 10.10.11.140 -v` (`-r` spec
 
 ### Virtual Host Scanning
 
-Let's can for virtual hosts (subdomains) with `ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -u http://artcorp.htb/ -H "Host: FUZZ.artcorp.htb" -fc 301`:
+Let's scan for virtual hosts (subdomains) with `ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt -u http://artcorp.htb/ -H "Host: FUZZ.artcorp.htb" -fc 301`:
 
 ```
 dev01                   [Status: 200, Size: 247, Words: 16, Lines: 10]
