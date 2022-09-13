@@ -39,7 +39,7 @@ More info about the structure of HackTheBox can be found on the [HTB knowledge b
 23. [3rd August 2022 - Shared (Medium)](Machines/Shared/README.md) (15+30 points)
 24. [4th August 2022 - Scrambled (Medium)](Machines/Scrambled/README.md) (15+30 points)
 25. [5th August 2022 - Retired (Medium)](Machines/Retired/README.md) (15+30 points)
-26. [6th August 2022 - Trick (Easy)](Machines/Retired/README.md) (10+20 points)
+26. [6th August 2022 - Trick (Easy)](Machines/Trick/README.md) (10+20 points)
 27. [7th August 2022 - Hathor (Insane)](Machines/Hathor/README.md) (25+50 points)
 
 ### Older Undated Writeups
