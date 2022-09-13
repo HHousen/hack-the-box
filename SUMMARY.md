@@ -15,6 +15,20 @@
 * [RouterSpace](Machines/RouterSpace/README.md)
 * [AdmirerToo](Machines/AdmirerToo/README.md)
 * [Shibboleth](Machines/Shibboleth/README.md)
+* [Timelapse](Machines/Timelapse/README.md)
+* [Noter](Machines/Noter/README.md)
+* [Talkative](Machines/Noter/README.md)
+* [OpenSource](Machines/OpenSource/README.md)
+* [Faculty](Machines/Faculty/README.md)
+* [StreamIO](Machines/StreamIO/README.md)
+* [Carpediem](Machines/Carpediem/README.md)
+* [RedPanda](Machines/RedPanda/README.md)
+* [Support](Machines/Support/README.md)
+* [Shared](Machines/Shared/README.md)
+* [Scrambled](Machines/Scrambled/README.md)
+* [Retired](Machines/Retired/README.md)
+* [Trick](Machines/Trick/README.md)
+* [Hathor](Machines/Hathor/README.md)
 
 ## Challenges
 
