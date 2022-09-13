@@ -27,6 +27,20 @@ More info about the structure of HackTheBox can be found on the [HTB knowledge b
 11. [26th February 2022 - Meta (Medium)](Machines/Meta/README.md) (15+30 points)
 12. [28th February 2022 - AdmirerToo (Hard)](Machines/AdmirerToo/README.md) (20+40 points)
 13. [1st March 2022 - RouterSpace (Easy)](Machines/RouterSpace/README.md) (10+20 points)
+14. [24th July 2022 - Timelapse (Easy)](Machines/Timelapse/README.md) (10+20 points)
+15. [25th July 2022 - Noter (Medium)](Machines/Noter/README.md) (15+30 points)
+16. [26th July 2022 - Talkative (Hard)](Machines/Talkative/README.md) (20+40 points)
+17. [27th July 2022 - OpenSource (Easy)](Machines/OpenSource/README.md) (10+20 points)
+18. [28th July 2022 - Faculty (Medium)](Machines/Faculty/README.md) (15+30 points)
+19. [29th July 2022 - StreamIO (Medium)](Machines/StreamIO/README.md) (15+30 points)
+20. [31st July 2022 - Carpediem (Hard)](Machines/Carpediem/README.md) (20+40 points)
+21. [1st August 2022 - RedPanda (Easy)](Machines/RedPanda/README.md) (10+20 points)
+22. [2nd August 2022 - Support (Easy)](Machines/Support/README.md) (10+20 points)
+23. [3rd August 2022 - Shared (Medium)](Machines/Shared/README.md) (15+30 points)
+24. [4th August 2022 - Scrambled (Medium)](Machines/Scrambled/README.md) (15+30 points)
+25. [5th August 2022 - Retired (Medium)](Machines/Retired/README.md) (15+30 points)
+26. [6th August 2022 - Trick (Easy)](Machines/Retired/README.md) (10+20 points)
+27. [7th August 2022 - Hathor (Insane)](Machines/Hathor/README.md) (25+50 points)
 
 ### Older Undated Writeups
 
