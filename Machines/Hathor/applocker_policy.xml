@@ -1,0 +1,584 @@
+<AppLockerPolicy Version="1">
+    <RuleCollection Type="Appx" EnforcementMode="Enabled">
+        <FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+                    <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+    </RuleCollection>
+    <RuleCollection Type="Dll" EnforcementMode="Enabled">
+        <FilePublisherRule Id="5b74e91f-e7d9-4348-a21b-047d2901c659" Name="Signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+                    <BinaryVersionRange LowSection="*" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePathRule Id="059bf360-e712-427a-8255-59d182bc4cd5" Name="%OSDRIVE%\share\scripts\7-zip64.dll" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%OSDRIVE%\share\scripts\7-zip64.dll" />
+            </Conditions>
+            <Exceptions>
+                <FilePathCondition Path="%OSDRIVE%\share\scripts\7-zip64.dll:*" />
+            </Exceptions>
+        </FilePathRule>
+        <FilePathRule Id="3737732c-99b7-41d4-9037-9cddfb0de0d0" Name="(Default Rule) All DLLs located in the Program Files folder" Description="Allows members of the Everyone group to load DLLs that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%PROGRAMFILES%\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="3a07aecc-17f3-43e5-911b-ddb7e4d7353f" Name="%OSDRIVE%\Get-bADpasswords\PSI\Psi_x64.dll" Description="" UserOrGroupSid="S-1-5-21-3783586571-2109290616-3725730865-10102" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%OSDRIVE%\Get-bADpasswords\PSI\Psi_x64.dll" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="a6651628-328a-4beb-9ff3-7c94e84b0ff4" Name="Microsoft Windows DLLs" Description="Allows members of the Everyone group to load DLLs located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\*" />
+            </Conditions>
+            <Exceptions>
+                <FilePathCondition Path="C:\Windows\Registration\CRMLog:*" />
+                <FilePathCondition Path="C:\Windows\Registration\CRMLog\*" />
+                <FilePathCondition Path="C:\Windows\System32\com\dmp:*" />
+                <FilePathCondition Path="C:\Windows\System32\com\dmp\*" />
+                <FilePathCondition Path="C:\Windows\System32\FxsTmp:*" />
+                <FilePathCondition Path="C:\Windows\System32\FxsTmp\*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\DSS\MachineKeys:*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\DSS\MachineKeys:\*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys:*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\drivers\color:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\drivers\color\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\PRINTERS:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\PRINTERS\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\SERVERS:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\SERVERS\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\WindowsColorSystem\Calibration Loader:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\WindowsColorSystem\Calibration Loader\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks_Migrated:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks_Migrated\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\com\dmp:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\com\dmp\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\FxsTmp:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\FxsTmp\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter\*" />
+                <FilePathCondition Path="c:\windows\tasks:*" />
+                <FilePathCondition Path="c:\windows\tasks\*" />
+                <FilePathCondition Path="c:\windows\temp:*" />
+                <FilePathCondition Path="c:\windows\temp\*" />
+                <FilePathCondition Path="C:\windows\tracing:*" />
+                <FilePathCondition Path="C:\windows\tracing\*" />
+            </Exceptions>
+        </FilePathRule>
+        <FilePathRule Id="bac4b0bf-6f1b-40e8-8627-8545fa89c8b6" Name="(Default Rule) Microsoft Windows DLLs" Description="Allows members of the Everyone group to load DLLs located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="fc510e44-f0d2-46e8-b9a1-0f1e4bdb375b" Name="All DLLs located in the Program Files folder" Description="Allows members of the Everyone group to load DLLs that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%PROGRAMFILES%\*" />
+            </Conditions>
+            <Exceptions>
+                <FilePathCondition Path="C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics:*" />
+                <FilePathCondition Path="C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics\*" />
+            </Exceptions>
+        </FilePathRule>
+        <FilePathRule Id="fe64f59f-6fca-45e5-a731-0f6715327c38" Name="(Default Rule) All DLLs" Description="Allows members of the local Administrators group to load all DLLs." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="*" />
+            </Conditions>
+        </FilePathRule>
+    </RuleCollection>
+    <RuleCollection Type="Exe" EnforcementMode="Enabled">
+        <FilePublisherRule Id="1c95e32b-8d77-4be3-a5ea-70fa8b33448f" Name="MSDT.EXE, in MICROSOFTr WINDOWSr OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFTr WINDOWSr OPERATING SYSTEM" BinaryName="MSDT.EXE">
+                    <BinaryVersionRange LowSection="*" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="2f48e4bf-fb10-4943-9ccf-3c38a33dff8a" Name="PRESENTATIONHOST.EXE, in MICROSOFTr WINDOWSr OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFTr WINDOWSr OPERATING SYSTEM" BinaryName="PRESENTATIONHOST.EXE">
+                    <BinaryVersionRange LowSection="*" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="577ae347-19fd-46b3-8f0a-a4a653dde1bc" Name="Signed by CN=ADMINISTRATOR, CN=USERS, DC=WINDCORP, DC=COM" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePublisherCondition PublisherName="CN=ADMINISTRATOR, CN=USERS, DC=WINDCORP, DC=COM" ProductName="*" BinaryName="*">
+                    <BinaryVersionRange LowSection="*" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="754a60b8-3945-4ea3-ba37-f9ae529297f3" Name="Signed by O=AUTOIT CONSULTING LTD, L=BIRMINGHAM, C=GB" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=AUTOIT CONSULTING LTD, L=BIRMINGHAM, C=GB" ProductName="*" BinaryName="*">
+                    <BinaryVersionRange LowSection="*" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="8df6bb7a-165b-4e4c-9ef1-183012b46580" Name="MSHTA.EXE, in INTERNET EXPLORER, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="INTERNET EXPLORER" BinaryName="MSHTA.EXE">
+                    <BinaryVersionRange LowSection="*" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="9e9181cb-27bc-4a15-ad6d-46696ae0fcb5" Name="MSBUILD.EXE, version 4.8.4161.0 and below, in MICROSOFTr .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFTr .NET FRAMEWORK" BinaryName="MSBUILD.EXE">
+                    <BinaryVersionRange LowSection="*" HighSection="4.8.4161.0" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="bd9ace8f-0b89-4726-9c5d-90c4998007e7" Name="INSTALLUTIL.EXE, version 2.0.50727.9157 and above, in MICROSOFTr .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFTr .NET FRAMEWORK" BinaryName="INSTALLUTIL.EXE">
+                    <BinaryVersionRange LowSection="2.0.50727.9157" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="cc909547-763e-4daa-be57-30df4f9db5e2" Name="MSBUILD.EXE, version 4.8.4161.0 and above, in MICROSOFTr .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFTr .NET FRAMEWORK" BinaryName="MSBUILD.EXE">
+                    <BinaryVersionRange LowSection="4.8.4161.0" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="e673082a-e07c-4a37-a7ac-4a7d79423220" Name="Signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+                    <BinaryVersionRange LowSection="*" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePathRule Id="0532a4fa-4e03-4fe5-a0ed-34914e6719a3" Name="%SYSTEM32%\Tasks:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Tasks:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="10c790e5-45d5-42d3-aaf1-fcd51f24593b" Name="%SYSTEM32%\regsvr32.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\regsvr32.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="1283b14d-d8b9-4266-a5c0-66c07d6a0273" Name="%SYSTEM32%\spool\drivers\color:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\spool\drivers\color:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="13bcae9c-a08c-4757-a803-c088e9e55d3e" Name="%SYSTEM32%\Fxstmp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Fxstmp\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="18635dba-5d58-40d5-9c90-12a3638088fa" Name="%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="1d8a1b94-aac1-4790-ac57-65f18563bb1b" Name="%WINDIR%\debug\WIA:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\debug\WIA:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="2098f2a9-fb22-49d3-a126-fa7e8a859739" Name="%SYSTEM32%\winevt\Logs\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\winevt\Logs\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="225d337e-a22a-4841-a7d7-4b5c6edd6fc5" Name="%SYSTEM32%\Com\dmp:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Com\dmp:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="2a6f3959-db20-4b59-bc4e-9c7719a648d1" Name="%WINDIR%\Tasks:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Tasks:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="2b8d1528-ddfb-44cf-9e12-bce2fd30845f" Name="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="2c47f772-4d79-4493-b64b-613e17f0011c" Name="All files located in the Windows folder" Description="Allows members of the Everyone group to run applications that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\*" />
+            </Conditions>
+            <Exceptions>
+                <FilePathCondition Path="C:\Windows\Registration\CRMLog:*" />
+                <FilePathCondition Path="C:\Windows\Registration\CRMLog\*" />
+                <FilePathCondition Path="C:\Windows\System32\com\dmp:*" />
+                <FilePathCondition Path="C:\Windows\System32\com\dmp\*" />
+                <FilePathCondition Path="C:\Windows\System32\FxsTmp:*" />
+                <FilePathCondition Path="C:\Windows\System32\FxsTmp\*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\DSS\MachineKeys:*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\DSS\MachineKeys\*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys:*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\drivers\color:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\drivers\color\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\PRINTERS:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\PRINTERS\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\SERVERS:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\SERVERS\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\WindowsColorSystem\Calibration Loader:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\WindowsColorSystem\Calibration Loader\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks_Migrated:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks_Migrated\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\com\dmp:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\com\dmp\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\FxsTmp:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\FxsTmp\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter\*" />
+                <FilePathCondition Path="c:\windows\tasks:*" />
+                <FilePathCondition Path="c:\windows\tasks\*" />
+                <FilePathCondition Path="c:\windows\temp:*" />
+                <FilePathCondition Path="c:\windows\temp\*" />
+                <FilePathCondition Path="C:\windows\tracing:*" />
+                <FilePathCondition Path="C:\windows\tracing\*" />
+            </Exceptions>
+        </FilePathRule>
+        <FilePathRule Id="33321360-5a7e-4d3d-8272-5d9ef3b5bda9" Name="%WINDIR%\Microsoft.NET\Framework\v4.0.30319\RegSvcs.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Microsoft.NET\Framework\v4.0.30319\RegSvcs.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="39b55ed3-c958-4d5c-846e-e338b7387fc9" Name="%OSDRIVE%\share\Bginfo64.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%OSDRIVE%\share\Bginfo64.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="42a009bf-e003-4019-836f-4b887554f304" Name="SCCM - %WINDIR%\ccm\logs\*" Description="SCCM Specific" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\ccm\logs\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="4e09139e-5f79-432f-934f-430df91c1a4b" Name="%SYSTEM32%\bash.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\bash.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="561c35e7-a084-41cf-b2a0-5a9b2dc6cf94" Name="%WINDIR%\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="5bacb6ff-674f-4f96-aa4e-e48720c401cf" Name="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="5e2a1ffe-bf21-40f1-9c32-40f76d445938" Name="SCCM - %WINDIR%\ccm\systemtemp\appvtempdata\appvcommandoutput:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\ccm\systemtemp\appvtempdata\appvcommandoutput:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="5e7475c4-3020-4a07-a837-ddbc314e9251" Name="%WINDIR%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="64904a7e-f006-46a1-8052-e73b9564c13d" Name="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="64e13f89-6de4-45fc-ae54-1404b4cfb67c" Name="%WINDIR%\Temp:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Temp:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="67591ec8-2291-46e7-82da-b388a0e58ac3" Name="%SYSTEM32%\winevt\Logs.\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\winevt\Logs.\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="78dba2df-5fe6-4b7e-a274-bd647dc677ab" Name="%SYSTEM32%\Spool\PRINTERS\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Spool\PRINTERS\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="7947e3d3-a885-49c2-b6ec-33a6810241cf" Name="%WINDIR%\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="7ce374b1-3983-4e18-9d8a-17de86121178" Name="%SYSTEM32%\spool\drivers\color\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\spool\drivers\color\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="8024cbd5-d315-413e-b352-a9e572fddbb3" Name="%SYSTEM32%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Tasks\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="859d7549-e8eb-43ff-a0ca-c547dd7b9045" Name="SCCM - %WINDIR%\ccm\inventory\noidmifs:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\ccm\inventory\noidmifs:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="891a4031-b849-4d04-b070-0efedbea02f5" Name="%WINDIR%\tracing:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\tracing:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="91324924-8a1a-44da-8676-6a3e7b956268" Name="%WINDIR%\Registration\CRMLog:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Registration\CRMLog:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="921cc481-6e17-4653-8f75-050b80acca20" Name="(Default Rule) All files located in the Program Files folder" Description="Allows members of the Everyone group to run applications that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%PROGRAMFILES%\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="931d4c73-a03d-460f-8acd-61001486f6d2" Name="SCCM - %WINDIR%\ccm\systemtemp\appvtempdata\appvcommandoutput\*" Description="SCCM specific" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\ccm\systemtemp\appvtempdata\appvcommandoutput\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="954b26ed-87c6-46d8-8dc4-5ca4e01eed36" Name="%SYSTEM32%\Microsoft\Crypto\DSS\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\DSS\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="96589dd6-4d14-409d-96db-04d88ad8a211" Name="%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="96d501f1-3c68-435d-ae99-45b737f88d84" Name="SCCM - %WINDIR%\ccm\logs:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\ccm\logs:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="999212fb-9894-4e2a-bcf0-a7dfd9ee20ec" Name="%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="9a90b589-423e-4b4a-8d5b-a4899259eb10" Name="%SYSTEM32%\regsvr32.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\regsvr32.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="9bacfd7c-8f6e-4786-abe5-d41a12d6d534" Name="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="9e07096a-ed7c-47a1-b29a-85583454d8a8" Name="All files located in the Program Files folder" Description="Allows members of the Everyone group to run applications that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%PROGRAMFILES%\*" />
+            </Conditions>
+            <Exceptions>
+                <FilePathCondition Path="C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics:*" />
+                <FilePathCondition Path="C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics\*" />
+            </Exceptions>
+        </FilePathRule>
+        <FilePathRule Id="a333b3c6-196b-47cb-ab0c-00921c5c4257" Name="%SYSTEM32%\Fxstmp:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Fxstmp:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="a61c8b2c-a319-4cd0-9690-d2177cad7b51" Name="(Default Rule) All files located in the Windows folder" Description="Allows members of the Everyone group to run applications that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="aaa1ddb1-3f20-4bcf-acca-476381d3a5a3" Name="%SYSTEM32%\Spool\PRINTERS:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Spool\PRINTERS:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="c83133af-6cf9-4f6b-8d5d-d171170c876b" Name="%SYSTEM32%\runscripthelper.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="C:\windows\system32\runscripthelper.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="ca98d963-b624-4315-aaf9-ccefb360191c" Name="%SYSTEM32%\Com\dmp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Com\dmp\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="d40d75f9-7241-44fa-bfe8-67075df655f3" Name="%WINDIR%\Registration\CRMLog\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Registration\CRMLog\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="d8d97bbb-e9bb-4b4a-8ea2-d0dec222dd9a" Name="%SYSTEM32%\Spool\SERVERS\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Spool\SERVERS\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="dacb237a-98b2-4530-a47e-2df5fa57467f" Name="%WINDIR%\Temp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Temp\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="dcf9a571-24ea-401b-9516-01b3418a5786" Name="%WINDIR%\tracing\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\tracing\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="e4cfeb3a-ec89-4942-a53c-3f7575820f1a" Name="SCCM - %WINDIR%\ccm\inventory\noidmifs\*" Description="SCCM specific" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\ccm\inventory\noidmifs\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="e4f13cce-93e8-4817-9103-90566c7beb0f" Name="%WINDIR%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Tasks\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="f6c5eb25-6b48-49a4-ad3a-1f8d2174ad2f" Name="%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\RegSvcs.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\RegSvcs.exe" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="fa7124ef-c39f-42c5-ac3c-1bf202596ee4" Name="%SYSTEM32%\Spool\SERVERS:*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%SYSTEM32%\Spool\SERVERS:*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="fd686d83-a829-4351-8ff4-27c7de5755d2" Name="(Default Rule) All files" Description="Allows members of the local Administrators group to run all applications." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="fdd2d2f7-9395-4be6-a67b-f188cbf5e83c" Name="%WINDIR%\debug\WIA\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\debug\WIA\*" />
+            </Conditions>
+        </FilePathRule>
+    </RuleCollection>
+    <RuleCollection Type="Msi" EnforcementMode="Enabled">
+        <FilePublisherRule Id="b7af7102-efde-4369-8a89-7a6a392d1473" Name="(Default Rule) All digitally signed Windows Installer files" Description="Allows members of the Everyone group to run digitally signed Windows Installer files." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+                    <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePathRule Id="5b290184-345a-4453-b184-45305f6d9a54" Name="(Default Rule) All Windows Installer files in %systemdrive%\Windows\Installer" Description="Allows members of the Everyone group to run all Windows Installer files located in %systemdrive%\Windows\Installer." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\Installer\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="64ad46ff-0d71-4fa0-a30b-3f3d30c5433d" Name="(Default Rule) All Windows Installer files" Description="Allows members of the local Administrators group to run all Windows Installer files." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="*.*" />
+            </Conditions>
+        </FilePathRule>
+    </RuleCollection>
+    <RuleCollection Type="Script" EnforcementMode="Enabled">
+        <FilePublisherRule Id="12bce21d-8da4-4f93-ab24-eeb9ad0bcc6d" Name="Signed by CN=ADMINISTRATOR, CN=USERS, DC=WINDCORP, DC=HTB" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePublisherCondition PublisherName="CN=ADMINISTRATOR, CN=USERS, DC=WINDCORP, DC=HTB" ProductName="*" BinaryName="*">
+                    <BinaryVersionRange LowSection="*" HighSection="*" />
+                </FilePublisherCondition>
+            </Conditions>
+        </FilePublisherRule>
+        <FilePathRule Id="01eef8b9-7be3-405e-8bec-0eb6e1ab05f0" Name="All scripts located in the Windows folder" Description="Allows members of the Everyone group to run scripts that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\*" />
+            </Conditions>
+            <Exceptions>
+                <FilePathCondition Path="C:\Windows\Registration\CRMLog:*" />
+                <FilePathCondition Path="C:\Windows\Registration\CRMLog\*" />
+                <FilePathCondition Path="C:\Windows\System32\com\dmp:*" />
+                <FilePathCondition Path="C:\Windows\System32\com\dmp\*" />
+                <FilePathCondition Path="C:\Windows\System32\FxsTmp:*" />
+                <FilePathCondition Path="C:\Windows\System32\FxsTmp\*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\DSS\MachineKeys:*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\DSS\MachineKeys\*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys:*" />
+                <FilePathCondition Path="C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\drivers\color:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\drivers\color\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\PRINTERS:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\PRINTERS\*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\SERVERS:*" />
+                <FilePathCondition Path="C:\Windows\System32\spool\SERVERS\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\WindowsColorSystem\Calibration Loader:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks\Microsoft\Windows\WindowsColorSystem\Calibration Loader\*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks_Migrated:*" />
+                <FilePathCondition Path="C:\Windows\System32\Tasks_Migrated\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\com\dmp:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\com\dmp\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\FxsTmp:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\FxsTmp\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System\*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter:*" />
+                <FilePathCondition Path="C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter\*" />
+                <FilePathCondition Path="c:\windows\tasks:*" />
+                <FilePathCondition Path="c:\windows\tasks\*" />
+                <FilePathCondition Path="c:\windows\temp:*" />
+                <FilePathCondition Path="c:\windows\temp\*" />
+                <FilePathCondition Path="C:\windows\tracing:*" />
+                <FilePathCondition Path="C:\windows\tracing\*" />
+            </Exceptions>
+        </FilePathRule>
+        <FilePathRule Id="06dce67b-934c-454f-a263-2515c8796a5d" Name="(Default Rule) All scripts located in the Program Files folder" Description="Allows members of the Everyone group to run scripts that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%PROGRAMFILES%\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="0ed89ea4-cb79-4559-b1ba-2d8239966046" Name="All scripts located in the Program Files folder" Description="Allows members of the Everyone group to run scripts that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%PROGRAMFILES%\*" />
+            </Conditions>
+            <Exceptions>
+                <FilePathCondition Path="C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics:*" />
+                <FilePathCondition Path="C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics\*" />
+            </Exceptions>
+        </FilePathRule>
+        <FilePathRule Id="9428c672-5fc3-47f4-808a-a0011f36dd2c" Name="(Default Rule) All scripts located in the Windows folder" Description="Allows members of the Everyone group to run scripts that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%WINDIR%\*" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="96305d86-aab2-4a57-b6c6-696e2f098e6f" Name="%OSDRIVE%\script\login.cmd" Description="" UserOrGroupSid="S-1-5-21-3783586571-2109290616-3725730865-2663" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="%OSDRIVE%\script\login.cmd" />
+            </Conditions>
+        </FilePathRule>
+        <FilePathRule Id="ed97d0cb-15ff-430f-b82c-8d7832957725" Name="(Default Rule) All scripts" Description="Allows members of the local Administrators group to run all scripts." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+            <Conditions>
+                <FilePathCondition Path="*" />
+            </Conditions>
+        </FilePathRule>
+    </RuleCollection>
+</AppLockerPolicy>
