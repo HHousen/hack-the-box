@@ -1,0 +1,1393 @@
+{
+    "success": true,
+    "error": null,
+    "count": 5,
+    "totalCount": 5,
+    "tickets": [
+        {
+            "deleted": false,
+            "status": 0,
+            "tags": [],
+            "subscribers": [
+                {
+                    "_id": "6243c28f1e0d4d001b0740d6",
+                    "username": "jpardella",
+                    "email": "jpardella@carpediem.htb",
+                    "fullname": "Joey Pardella",
+                    "title": "Desktop Support",
+                    "role": {
+                        "_id": "623c8b20855cc5001a8ba139",
+                        "name": "Support",
+                        "description": "Default role for agents",
+                        "normalized": "support",
+                        "isAdmin": false,
+                        "isAgent": true,
+                        "id": "623c8b20855cc5001a8ba139"
+                    }
+                },
+                {
+                    "_id": "6243c0be1e0d4d001b0740d4",
+                    "username": "jhammond",
+                    "email": "jhammond@carpediem.htb",
+                    "fullname": "Jeremy Hammond",
+                    "title": "Sr. Systems Engineer",
+                    "role": {
+                        "_id": "623c8b20855cc5001a8ba139",
+                        "name": "Support",
+                        "description": "Default role for agents",
+                        "normalized": "support",
+                        "isAdmin": false,
+                        "isAgent": true,
+                        "id": "623c8b20855cc5001a8ba139"
+                    }
+                }
+            ],
+            "_id": "62478d83eadb13001b66b62c",
+            "subject": "Need help building the CMS",
+            "group": {
+                "members": [],
+                "sendMailTo": [],
+                "public": false,
+                "_id": "6244610ff2c8c07f687ba8a4",
+                "name": "Information Security",
+                "__v": 0
+            },
+            "type": {
+                "priorities": [
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#29b955",
+                        "_id": "623c8b24645f88065a113d67",
+                        "name": "Normal",
+                        "migrationNum": 1,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d67"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#8e24aa",
+                        "_id": "623c8b24645f88065a113d68",
+                        "name": "Urgent",
+                        "migrationNum": 2,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d68"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#e65100",
+                        "_id": "623c8b24645f88065a113d69",
+                        "name": "Critical",
+                        "migrationNum": 3,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d69"
+                    }
+                ],
+                "_id": "623c8b20855cc5001a8ba137",
+                "name": "Task",
+                "__v": 1
+            },
+            "priority": {
+                "overdueIn": 2880,
+                "htmlColor": "#29b955",
+                "_id": "623c8b24645f88065a113d67",
+                "name": "Normal",
+                "migrationNum": 1,
+                "default": true,
+                "__v": 0,
+                "durationFormatted": "2 days",
+                "id": "623c8b24645f88065a113d67"
+            },
+            "issue": "<p>Hey Jeremy, <br />Can you help me work on the CMS at all this week?  The base install is completed, but I need your expertise to make sure I did everything correctly.</p>\n",
+            "date": "2022-04-01T23:40:51.552Z",
+            "comments": [
+                {
+                    "deleted": false,
+                    "_id": "62478e3a608eea1532bcd1b9",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-04-01T23:43:54.776Z",
+                    "comment": "<p>Please don&#39;t expose that application publically.  I told you I would help when I had time and right now I&#39;m just too busy.<br>Build it out if you&#39;d like, but...just don&#39;t do anything stupid.</p>\n"
+                },
+                {
+                    "deleted": false,
+                    "_id": "624f49ca8576ce001bb6702e",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-04-07T20:30:02.359Z",
+                    "comment": "<p>Don&#39;t worry. I moved it off of the main server and into a container with SSL encryption.</p>\n"
+                }
+            ],
+            "notes": [],
+            "attachments": [],
+            "history": [
+                {
+                    "_id": "62478d83eadb13001b66b62d",
+                    "action": "ticket:created",
+                    "description": "Ticket was created.",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-04-01T23:40:51.573Z"
+                },
+                {
+                    "_id": "62478d94608eea1532bcd1b8",
+                    "action": "ticket:set:assignee",
+                    "description": "Jeremy Hammond was set as assignee",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-04-01T23:41:08.431Z"
+                },
+                {
+                    "_id": "62478e3a608eea1532bcd1ba",
+                    "action": "ticket:comment:added",
+                    "description": "Comment was added",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-04-01T23:43:54.787Z"
+                },
+                {
+                    "_id": "624f49ca8576ce001bb6702f",
+                    "action": "ticket:comment:added",
+                    "description": "Comment was added",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-04-07T20:30:02.380Z"
+                },
+                {
+                    "_id": "624f4a828576ce001bb67031",
+                    "action": "ticket:comment:updated",
+                    "description": "Comment was updated: 624f49ca8576ce001bb6702e",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-04-07T20:33:06.175Z"
+                }
+            ],
+            "owner": {
+                "_id": "6243c28f1e0d4d001b0740d6",
+                "username": "jpardella",
+                "email": "jpardella@carpediem.htb",
+                "fullname": "Joey Pardella",
+                "title": "Desktop Support",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "uid": 1008,
+            "__v": 4,
+            "assignee": {
+                "_id": "6243c0be1e0d4d001b0740d4",
+                "username": "jhammond",
+                "email": "jhammond@carpediem.htb",
+                "fullname": "Jeremy Hammond",
+                "title": "Sr. Systems Engineer",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "updated": "2022-04-07T20:30:02.374Z"
+        },
+        {
+            "deleted": false,
+            "status": 1,
+            "tags": [],
+            "subscribers": [
+                {
+                    "_id": "6243c0be1e0d4d001b0740d4",
+                    "username": "jhammond",
+                    "email": "jhammond@carpediem.htb",
+                    "fullname": "Jeremy Hammond",
+                    "title": "Sr. Systems Engineer",
+                    "role": {
+                        "_id": "623c8b20855cc5001a8ba139",
+                        "name": "Support",
+                        "description": "Default role for agents",
+                        "normalized": "support",
+                        "isAdmin": false,
+                        "isAgent": true,
+                        "id": "623c8b20855cc5001a8ba139"
+                    }
+                }
+            ],
+            "_id": "6244673c2142479dd493d9da",
+            "subject": "Trudesk API access - Portal",
+            "group": {
+                "members": [],
+                "sendMailTo": [],
+                "public": false,
+                "_id": "6244610ff2c8c07f687ba8a4",
+                "name": "Information Security",
+                "__v": 0
+            },
+            "type": {
+                "priorities": [
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#29b955",
+                        "_id": "623c8b24645f88065a113d67",
+                        "name": "Normal",
+                        "migrationNum": 1,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d67"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#8e24aa",
+                        "_id": "623c8b24645f88065a113d68",
+                        "name": "Urgent",
+                        "migrationNum": 2,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d68"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#e65100",
+                        "_id": "623c8b24645f88065a113d69",
+                        "name": "Critical",
+                        "migrationNum": 3,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d69"
+                    }
+                ],
+                "_id": "623c8b20855cc5001a8ba137",
+                "name": "Task",
+                "__v": 1
+            },
+            "priority": {
+                "overdueIn": 2880,
+                "htmlColor": "#29b955",
+                "_id": "623c8b24645f88065a113d67",
+                "name": "Normal",
+                "migrationNum": 1,
+                "default": true,
+                "__v": 0,
+                "durationFormatted": "2 days",
+                "id": "623c8b24645f88065a113d67"
+            },
+            "issue": "<p>I&#39;ll be looking into tightenting up security permissions this week for the Trudesk integration in the Portal.  We&#39;ll need to also perform some threat modeling to find out where our weak points are and come up with an action plan to mitigate.</p>\n",
+            "date": "2022-03-30T14:20:44.538Z",
+            "comments": [],
+            "notes": [],
+            "attachments": [],
+            "history": [
+                {
+                    "_id": "6244673c2142479dd493d9db",
+                    "action": "ticket:created",
+                    "description": "Ticket was created.",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:20:44.545Z"
+                },
+                {
+                    "_id": "62446749fe7050bdd65b48c4",
+                    "action": "ticket:set:status",
+                    "description": "status set to: 1",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:20:57.567Z"
+                },
+                {
+                    "_id": "62470f14eadb13001b66b62b",
+                    "action": "ticket:set:assignee",
+                    "description": "Jeremy Hammond was set as assignee",
+                    "owner": {
+                        "_id": "623c8b20855cc5001a8ba13c",
+                        "username": "admin",
+                        "fullname": "Robert Frost",
+                        "email": "rfrost@carpediem.htb",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba138",
+                            "name": "Admin",
+                            "description": "Default role for admins",
+                            "normalized": "admin",
+                            "isAdmin": true,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba138"
+                        },
+                        "title": "Sr. Network Engineer"
+                    },
+                    "date": "2022-04-01T14:41:24.574Z"
+                }
+            ],
+            "owner": {
+                "_id": "6243c0be1e0d4d001b0740d4",
+                "username": "jhammond",
+                "email": "jhammond@carpediem.htb",
+                "fullname": "Jeremy Hammond",
+                "title": "Sr. Systems Engineer",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "uid": 1007,
+            "__v": 2,
+            "assignee": {
+                "_id": "6243c0be1e0d4d001b0740d4",
+                "username": "jhammond",
+                "email": "jhammond@carpediem.htb",
+                "fullname": "Jeremy Hammond",
+                "title": "Sr. Systems Engineer",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            }
+        },
+        {
+            "deleted": false,
+            "status": 2,
+            "tags": [],
+            "subscribers": [
+                {
+                    "_id": "6243c3471e0d4d001b0740d7",
+                    "username": "acooke",
+                    "email": "acooke@carpediem.htb",
+                    "fullname": "Adeanna Cooke",
+                    "title": "Director - Human Resources",
+                    "role": {
+                        "_id": "623c8b20855cc5001a8ba139",
+                        "name": "Support",
+                        "description": "Default role for agents",
+                        "normalized": "support",
+                        "isAdmin": false,
+                        "isAgent": true,
+                        "id": "623c8b20855cc5001a8ba139"
+                    }
+                },
+                {
+                    "_id": "6243c28f1e0d4d001b0740d6",
+                    "username": "jpardella",
+                    "email": "jpardella@carpediem.htb",
+                    "fullname": "Joey Pardella",
+                    "title": "Desktop Support",
+                    "role": {
+                        "_id": "623c8b20855cc5001a8ba139",
+                        "name": "Support",
+                        "description": "Default role for agents",
+                        "normalized": "support",
+                        "isAdmin": false,
+                        "isAgent": true,
+                        "id": "623c8b20855cc5001a8ba139"
+                    }
+                }
+            ],
+            "_id": "624465135596178468330932",
+            "subject": "New employee on-boarding - Horace Flaccus",
+            "group": {
+                "members": [],
+                "sendMailTo": [],
+                "public": false,
+                "_id": "6243c6601acd1559cdb40198",
+                "name": "Desktop Support",
+                "__v": 0
+            },
+            "type": {
+                "priorities": [
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#29b955",
+                        "_id": "623c8b24645f88065a113d67",
+                        "name": "Normal",
+                        "migrationNum": 1,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d67"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#8e24aa",
+                        "_id": "623c8b24645f88065a113d68",
+                        "name": "Urgent",
+                        "migrationNum": 2,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d68"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#e65100",
+                        "_id": "623c8b24645f88065a113d69",
+                        "name": "Critical",
+                        "migrationNum": 3,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d69"
+                    }
+                ],
+                "_id": "623c8b20855cc5001a8ba137",
+                "name": "Task",
+                "__v": 1
+            },
+            "priority": {
+                "overdueIn": 2880,
+                "htmlColor": "#8e24aa",
+                "_id": "623c8b24645f88065a113d68",
+                "name": "Urgent",
+                "migrationNum": 2,
+                "default": true,
+                "__v": 0,
+                "durationFormatted": "2 days",
+                "id": "623c8b24645f88065a113d68"
+            },
+            "issue": "<p>We have hired a new Network Engineer and need to get him set up with his credentials and phone before his start date next month.<br />Please create this account at your earliest convenience.<br /><br />Thank you.</p>\n",
+            "date": "2022-03-30T14:11:31.501Z",
+            "comments": [
+                {
+                    "deleted": false,
+                    "_id": "624465512142479dd493d9ce",
+                    "owner": {
+                        "_id": "623c8b20855cc5001a8ba13c",
+                        "username": "admin",
+                        "fullname": "Robert Frost",
+                        "email": "rfrost@carpediem.htb",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba138",
+                            "name": "Admin",
+                            "description": "Default role for admins",
+                            "normalized": "admin",
+                            "isAdmin": true,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba138"
+                        },
+                        "title": "Sr. Network Engineer"
+                    },
+                    "date": "2022-03-30T14:12:33.060Z",
+                    "comment": "<p>Hey Adeanna,<br>I think Joey is out this week, but I can take care of this. Whats the last 4 digits of his employee ID so I can get his extension set up in the VoIP system?</p>\n"
+                },
+                {
+                    "deleted": false,
+                    "_id": "624465562142479dd493d9d2",
+                    "owner": {
+                        "_id": "6243c3471e0d4d001b0740d7",
+                        "username": "acooke",
+                        "email": "acooke@carpediem.htb",
+                        "fullname": "Adeanna Cooke",
+                        "title": "Director - Human Resources",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:12:38.123Z",
+                    "comment": "<p>Thanks Robert,<br>Last 4 of employee ID is 9650.</p>\n"
+                },
+                {
+                    "deleted": false,
+                    "_id": "6244655f2142479dd493d9d5",
+                    "owner": {
+                        "_id": "623c8b20855cc5001a8ba13c",
+                        "username": "admin",
+                        "fullname": "Robert Frost",
+                        "email": "rfrost@carpediem.htb",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba138",
+                            "name": "Admin",
+                            "description": "Default role for admins",
+                            "normalized": "admin",
+                            "isAdmin": true,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba138"
+                        },
+                        "title": "Sr. Network Engineer"
+                    },
+                    "date": "2022-03-30T14:12:47.277Z",
+                    "comment": "<p>Thank you! He&#39;s all set up and ready to go. When he gets to the office on his first day just have him log into his phone first. I&#39;ll leave him a voicemail with his initial credentials for server access. His phone pin code will be 2022 and to get into voicemail he can dial *62</p>\n<p>Also...let him know that if he wants to use a desktop soft phone that we&#39;ve been testing Zoiper with some of our end users.</p>\n<p>Changing the status of this ticket to pending until he&#39;s been set up and changes his initial credentials.</p>\n"
+                }
+            ],
+            "notes": [],
+            "attachments": [],
+            "history": [
+                {
+                    "_id": "624465135596178468330933",
+                    "action": "ticket:created",
+                    "description": "Ticket was created.",
+                    "owner": {
+                        "_id": "6243c3471e0d4d001b0740d7",
+                        "username": "acooke",
+                        "email": "acooke@carpediem.htb",
+                        "fullname": "Adeanna Cooke",
+                        "title": "Director - Human Resources",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:11:31.504Z"
+                },
+                {
+                    "_id": "624465232142479dd493d9cb",
+                    "action": "ticket:set:status",
+                    "description": "status set to: 1",
+                    "owner": {
+                        "_id": "6243c3471e0d4d001b0740d7",
+                        "username": "acooke",
+                        "email": "acooke@carpediem.htb",
+                        "fullname": "Adeanna Cooke",
+                        "title": "Director - Human Resources",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:11:47.318Z"
+                },
+                {
+                    "_id": "6244652d2142479dd493d9cd",
+                    "action": "ticket:set:assignee",
+                    "description": "Joey Pardella was set as assignee",
+                    "owner": {
+                        "_id": "6243c3471e0d4d001b0740d7",
+                        "username": "acooke",
+                        "email": "acooke@carpediem.htb",
+                        "fullname": "Adeanna Cooke",
+                        "title": "Director - Human Resources",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:11:57.663Z"
+                },
+                {
+                    "_id": "624465512142479dd493d9cf",
+                    "action": "ticket:comment:added",
+                    "description": "Comment was added",
+                    "owner": {
+                        "_id": "623c8b20855cc5001a8ba13c",
+                        "username": "admin",
+                        "fullname": "Robert Frost",
+                        "email": "rfrost@carpediem.htb",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba138",
+                            "name": "Admin",
+                            "description": "Default role for admins",
+                            "normalized": "admin",
+                            "isAdmin": true,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba138"
+                        },
+                        "title": "Sr. Network Engineer"
+                    },
+                    "date": "2022-03-30T14:12:33.072Z"
+                },
+                {
+                    "_id": "624465562142479dd493d9d3",
+                    "action": "ticket:comment:added",
+                    "description": "Comment was added",
+                    "owner": {
+                        "_id": "6243c3471e0d4d001b0740d7",
+                        "username": "acooke",
+                        "email": "acooke@carpediem.htb",
+                        "fullname": "Adeanna Cooke",
+                        "title": "Director - Human Resources",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:12:38.124Z"
+                },
+                {
+                    "_id": "6244655f2142479dd493d9d6",
+                    "action": "ticket:comment:added",
+                    "description": "Comment was added",
+                    "owner": {
+                        "_id": "623c8b20855cc5001a8ba13c",
+                        "username": "admin",
+                        "fullname": "Robert Frost",
+                        "email": "rfrost@carpediem.htb",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba138",
+                            "name": "Admin",
+                            "description": "Default role for admins",
+                            "normalized": "admin",
+                            "isAdmin": true,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba138"
+                        },
+                        "title": "Sr. Network Engineer"
+                    },
+                    "date": "2022-03-30T14:12:47.277Z"
+                },
+                {
+                    "_id": "6244657a2142479dd493d9d9",
+                    "action": "ticket:set:status",
+                    "description": "status set to: 2",
+                    "owner": {
+                        "_id": "623c8b20855cc5001a8ba13c",
+                        "username": "admin",
+                        "fullname": "Robert Frost",
+                        "email": "rfrost@carpediem.htb",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba138",
+                            "name": "Admin",
+                            "description": "Default role for admins",
+                            "normalized": "admin",
+                            "isAdmin": true,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba138"
+                        },
+                        "title": "Sr. Network Engineer"
+                    },
+                    "date": "2022-03-30T14:13:14.794Z"
+                }
+            ],
+            "owner": {
+                "_id": "6243c3471e0d4d001b0740d7",
+                "username": "acooke",
+                "email": "acooke@carpediem.htb",
+                "fullname": "Adeanna Cooke",
+                "title": "Director - Human Resources",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "uid": 1006,
+            "__v": 6,
+            "assignee": {
+                "_id": "6243c28f1e0d4d001b0740d6",
+                "username": "jpardella",
+                "email": "jpardella@carpediem.htb",
+                "fullname": "Joey Pardella",
+                "title": "Desktop Support",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "updated": "2022-03-30T14:12:47.277Z"
+        },
+        {
+            "deleted": false,
+            "status": 3,
+            "tags": [],
+            "subscribers": [
+                {
+                    "_id": "6243c28f1e0d4d001b0740d6",
+                    "username": "jpardella",
+                    "email": "jpardella@carpediem.htb",
+                    "fullname": "Joey Pardella",
+                    "title": "Desktop Support",
+                    "role": {
+                        "_id": "623c8b20855cc5001a8ba139",
+                        "name": "Support",
+                        "description": "Default role for agents",
+                        "normalized": "support",
+                        "isAdmin": false,
+                        "isAgent": true,
+                        "id": "623c8b20855cc5001a8ba139"
+                    }
+                },
+                {
+                    "_id": "6243c0be1e0d4d001b0740d4",
+                    "username": "jhammond",
+                    "email": "jhammond@carpediem.htb",
+                    "fullname": "Jeremy Hammond",
+                    "title": "Sr. Systems Engineer",
+                    "role": {
+                        "_id": "623c8b20855cc5001a8ba139",
+                        "name": "Support",
+                        "description": "Default role for agents",
+                        "normalized": "support",
+                        "isAdmin": false,
+                        "isAgent": true,
+                        "id": "623c8b20855cc5001a8ba139"
+                    }
+                }
+            ],
+            "_id": "6244635c8fc3556ae8715b0f",
+            "subject": "Username change",
+            "group": {
+                "members": [],
+                "sendMailTo": [],
+                "public": false,
+                "_id": "6243c6601acd1559cdb40198",
+                "name": "Desktop Support",
+                "__v": 0
+            },
+            "type": {
+                "priorities": [
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#29b955",
+                        "_id": "623c8b24645f88065a113d67",
+                        "name": "Normal",
+                        "migrationNum": 1,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d67"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#8e24aa",
+                        "_id": "623c8b24645f88065a113d68",
+                        "name": "Urgent",
+                        "migrationNum": 2,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d68"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#e65100",
+                        "_id": "623c8b24645f88065a113d69",
+                        "name": "Critical",
+                        "migrationNum": 3,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d69"
+                    }
+                ],
+                "_id": "623c8b20855cc5001a8ba136",
+                "name": "Issue",
+                "__v": 1
+            },
+            "priority": {
+                "overdueIn": 2880,
+                "htmlColor": "#8e24aa",
+                "_id": "623c8b24645f88065a113d68",
+                "name": "Urgent",
+                "migrationNum": 2,
+                "default": true,
+                "__v": 0,
+                "durationFormatted": "2 days",
+                "id": "623c8b24645f88065a113d68"
+            },
+            "issue": "<p>I need a handle, man.  I mean, I don&#39;t have an identity until I have a handle.<br />How about The Master of Disaster?</p>\n",
+            "date": "2022-03-30T14:04:12.953Z",
+            "comments": [
+                {
+                    "deleted": false,
+                    "_id": "6244644e559617846833092b",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:08:14.846Z",
+                    "comment": "<p>You&#39;re hopelss, man.  Utterly hopeless.</p>\n<p>I&#39;m closing this ticket.</p>\n"
+                }
+            ],
+            "notes": [],
+            "attachments": [],
+            "history": [
+                {
+                    "_id": "6244635c8fc3556ae8715b10",
+                    "action": "ticket:created",
+                    "description": "Ticket was created.",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:04:12.960Z"
+                },
+                {
+                    "_id": "6244642b559617846833092a",
+                    "action": "ticket:set:assignee",
+                    "description": "Jeremy Hammond was set as assignee",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:07:39.053Z"
+                },
+                {
+                    "_id": "6244644e559617846833092c",
+                    "action": "ticket:comment:added",
+                    "description": "Comment was added",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:08:14.857Z"
+                },
+                {
+                    "_id": "62446460559617846833092d",
+                    "action": "ticket:set:status",
+                    "description": "status set to: 3",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:08:32.834Z"
+                }
+            ],
+            "owner": {
+                "_id": "6243c28f1e0d4d001b0740d6",
+                "username": "jpardella",
+                "email": "jpardella@carpediem.htb",
+                "fullname": "Joey Pardella",
+                "title": "Desktop Support",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "uid": 1005,
+            "__v": 3,
+            "assignee": {
+                "_id": "6243c0be1e0d4d001b0740d4",
+                "username": "jhammond",
+                "email": "jhammond@carpediem.htb",
+                "fullname": "Jeremy Hammond",
+                "title": "Sr. Systems Engineer",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "updated": "2022-03-30T14:08:14.856Z"
+        },
+        {
+            "deleted": false,
+            "status": 1,
+            "tags": [],
+            "subscribers": [
+                {
+                    "_id": "6243c0be1e0d4d001b0740d4",
+                    "username": "jhammond",
+                    "email": "jhammond@carpediem.htb",
+                    "fullname": "Jeremy Hammond",
+                    "title": "Sr. Systems Engineer",
+                    "role": {
+                        "_id": "623c8b20855cc5001a8ba139",
+                        "name": "Support",
+                        "description": "Default role for agents",
+                        "normalized": "support",
+                        "isAdmin": false,
+                        "isAgent": true,
+                        "id": "623c8b20855cc5001a8ba139"
+                    }
+                }
+            ],
+            "_id": "624461a6f2c8c07f687ba8a6",
+            "subject": "Security risks - Portal",
+            "group": {
+                "members": [],
+                "sendMailTo": [],
+                "public": false,
+                "_id": "6244610ff2c8c07f687ba8a4",
+                "name": "Information Security",
+                "__v": 0
+            },
+            "type": {
+                "priorities": [
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#29b955",
+                        "_id": "623c8b24645f88065a113d67",
+                        "name": "Normal",
+                        "migrationNum": 1,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d67"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#8e24aa",
+                        "_id": "623c8b24645f88065a113d68",
+                        "name": "Urgent",
+                        "migrationNum": 2,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d68"
+                    },
+                    {
+                        "overdueIn": 2880,
+                        "htmlColor": "#e65100",
+                        "_id": "623c8b24645f88065a113d69",
+                        "name": "Critical",
+                        "migrationNum": 3,
+                        "default": true,
+                        "__v": 0,
+                        "durationFormatted": "2 days",
+                        "id": "623c8b24645f88065a113d69"
+                    }
+                ],
+                "_id": "623c8b20855cc5001a8ba136",
+                "name": "Issue",
+                "__v": 1
+            },
+            "priority": {
+                "overdueIn": 2880,
+                "htmlColor": "#e65100",
+                "_id": "623c8b24645f88065a113d69",
+                "name": "Critical",
+                "migrationNum": 3,
+                "default": true,
+                "__v": 0,
+                "durationFormatted": "2 days",
+                "id": "623c8b24645f88065a113d69"
+            },
+            "issue": "<p>We need to patch the user profile and admin sections of our Portal ASAP. Why are we continually pushing out functions that haven&#39;t been tested by the Infosec team?</p>\n",
+            "date": "2022-03-30T13:56:54.294Z",
+            "comments": [
+                {
+                    "deleted": false,
+                    "_id": "624464af559617846833092f",
+                    "owner": {
+                        "_id": "623c8b20855cc5001a8ba13c",
+                        "username": "admin",
+                        "fullname": "Robert Frost",
+                        "email": "rfrost@carpediem.htb",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba138",
+                            "name": "Admin",
+                            "description": "Default role for admins",
+                            "normalized": "admin",
+                            "isAdmin": true,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba138"
+                        },
+                        "title": "Sr. Network Engineer"
+                    },
+                    "date": "2022-03-30T14:09:51.703Z",
+                    "comment": "<p>Thanks, Jeremy.  I agree.  This is a big problem.</p>\n"
+                }
+            ],
+            "notes": [],
+            "attachments": [],
+            "history": [
+                {
+                    "_id": "624461a6f2c8c07f687ba8a7",
+                    "action": "ticket:created",
+                    "description": "Ticket was created.",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T13:56:54.301Z"
+                },
+                {
+                    "_id": "624461bb8fc3556ae8715b0d",
+                    "action": "ticket:update:subject",
+                    "description": "Ticket Subject was updated.",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T13:57:15.546Z"
+                },
+                {
+                    "_id": "624461bb8fc3556ae8715b0e",
+                    "action": "ticket:update:issue",
+                    "description": "Ticket Issue was updated.",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T13:57:15.559Z"
+                },
+                {
+                    "_id": "6244640b5596178468330928",
+                    "action": "ticket:set:assignee",
+                    "description": "Jeremy Hammond was set as assignee",
+                    "owner": {
+                        "_id": "6243c28f1e0d4d001b0740d6",
+                        "username": "jpardella",
+                        "email": "jpardella@carpediem.htb",
+                        "fullname": "Joey Pardella",
+                        "title": "Desktop Support",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:07:07.789Z"
+                },
+                {
+                    "_id": "6244648a559617846833092e",
+                    "action": "ticket:set:status",
+                    "description": "status set to: 1",
+                    "owner": {
+                        "_id": "6243c0be1e0d4d001b0740d4",
+                        "username": "jhammond",
+                        "email": "jhammond@carpediem.htb",
+                        "fullname": "Jeremy Hammond",
+                        "title": "Sr. Systems Engineer",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba139",
+                            "name": "Support",
+                            "description": "Default role for agents",
+                            "normalized": "support",
+                            "isAdmin": false,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba139"
+                        }
+                    },
+                    "date": "2022-03-30T14:09:14.064Z"
+                },
+                {
+                    "_id": "624464af5596178468330930",
+                    "action": "ticket:comment:added",
+                    "description": "Comment was added",
+                    "owner": {
+                        "_id": "623c8b20855cc5001a8ba13c",
+                        "username": "admin",
+                        "fullname": "Robert Frost",
+                        "email": "rfrost@carpediem.htb",
+                        "role": {
+                            "_id": "623c8b20855cc5001a8ba138",
+                            "name": "Admin",
+                            "description": "Default role for admins",
+                            "normalized": "admin",
+                            "isAdmin": true,
+                            "isAgent": true,
+                            "id": "623c8b20855cc5001a8ba138"
+                        },
+                        "title": "Sr. Network Engineer"
+                    },
+                    "date": "2022-03-30T14:09:51.708Z"
+                }
+            ],
+            "owner": {
+                "_id": "6243c0be1e0d4d001b0740d4",
+                "username": "jhammond",
+                "email": "jhammond@carpediem.htb",
+                "fullname": "Jeremy Hammond",
+                "title": "Sr. Systems Engineer",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "uid": 1004,
+            "__v": 4,
+            "assignee": {
+                "_id": "6243c0be1e0d4d001b0740d4",
+                "username": "jhammond",
+                "email": "jhammond@carpediem.htb",
+                "fullname": "Jeremy Hammond",
+                "title": "Sr. Systems Engineer",
+                "role": {
+                    "_id": "623c8b20855cc5001a8ba139",
+                    "name": "Support",
+                    "description": "Default role for agents",
+                    "normalized": "support",
+                    "isAdmin": false,
+                    "isAgent": true,
+                    "id": "623c8b20855cc5001a8ba139"
+                }
+            },
+            "updated": "2022-03-30T14:09:51.706Z"
+        }
+    ]
+}
